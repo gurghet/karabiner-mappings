@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Map backquote (`) to alt+backquote</name>
+		<identifier>private.backquote_to_alt_and_backquote</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::BACKQUOTE,
+			KeyCode::BACKQUOTE, ModifierFlag::OPTION_R
+		</autogen>
+	</item>
+	<item>
+		<name>Map alt+E to alt+2 to make the € symbol</name>
+		<identifier>private.alt_e_to_alt_2_for_€_symbol</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::E, ModifierFlag::OPTION_R,
+			KeyCode::KEY_2, ModifierFlag::OPTION_R
+		</autogen>
+	</item>
+	<item>
+		<name>Map ctrl+M to the return key</name>
+		<identifier>private.ctrl_m_to_return</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::M, ModifierFlag::CONTROL_L,
+			KeyCode::RETURN
+		</autogen>
+	</item>
+</root>
