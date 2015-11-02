@@ -10,12 +10,12 @@
 		</autogen>
 	</item>
 	<item>
-		<name>Map alt+E to alt+2 to make the € symbol</name>
+		<name>Map alt+E to alt+shift+2 to make the € symbol</name>
 		<identifier>private.alt_e_to_alt_2_for_€_symbol</identifier>
 		<autogen>
 			__KeyToKey__
 			KeyCode::E, ModifierFlag::OPTION_R,
-			KeyCode::KEY_2, ModifierFlag::OPTION_R
+			KeyCode::KEY_2, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R
 		</autogen>
 	</item>
 	<item>
@@ -25,6 +25,15 @@
 			__KeyToKey__
 			KeyCode::M, ModifierFlag::CONTROL_L,
 			KeyCode::RETURN
+		</autogen>
+	</item>
+	<item>
+		<name>Deactivate menu key</name>
+		<identifier>private.disable_pc_application_key</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::PC_APPLICATION,
+			KeyCode::VK_NONE
 		</autogen>
 	</item>
 </root>
