@@ -60,7 +60,7 @@
       </modifier_not>
       <autogen>
         __KeyToKey__
-        KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+        KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
         KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L,
       </autogen>
     </item>
