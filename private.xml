@@ -3,6 +3,9 @@
 	<item>
 		<name>Map backquote (`) to alt+backquote</name>
 		<identifier>private.backquote_to_alt_and_backquote</identifier>
+    <modifier_not>
+        ModifierFlag::SHIFT_L, ModifierFlag::SHIFT_R
+      </modifier_not>
 		<autogen>
 			__KeyToKey__
 			KeyCode::BACKQUOTE,
