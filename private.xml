@@ -62,6 +62,7 @@
       <name>Control+PNBF to Up/Down/Left/Right — Colemak</name>
       <appendix>(when there are no other modifiers)</appendix>
       <identifier>private.emacsmode_controlPNBF_nomodifiers</identifier>
+      <not>{{EMACS_MODE_IGNORE_APPS}}</not>
       <modifier_not>
         ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
         ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
@@ -72,6 +73,7 @@
     <item>
       <name>Control+PNBF to Up/Down/Left/Right — Colemak</name>
       <identifier>private.emacsmode_controlPNBF</identifier>
+      <not>{{EMACS_MODE_IGNORE_APPS}}</not>
       <include path="snippets/emacsmode_controlPNBF.xml" />
     </item>
 </root>
