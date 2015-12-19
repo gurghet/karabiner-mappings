@@ -3,6 +3,7 @@
 	<item>
 		<name>Map backquote (`) to alt+backquote</name>
 		<identifier>private.backquote_to_alt_and_backquote</identifier>
+    <not>{{EMACS_MODE_IGNORE_APPS}}</not>
     <modifier_not>
         ModifierFlag::SHIFT_L, ModifierFlag::SHIFT_R
       </modifier_not>
@@ -75,5 +76,14 @@
       <identifier>private.emacsmode_controlPNBF</identifier>
       <not>{{EMACS_MODE_IGNORE_APPS}}</not>
       <include path="snippets/emacsmode_controlPNBF.xml" />
+    </item>
+    <item>
+      <name>Anti-RSI accents [l_ctrl+[ -> ` dead-key]</name>
+      <identifier>private.antirsi.accent</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_R,
+        KeyCode::BACKQUOTE, ModifierFlag::OPTION_R
+      </autogen>
     </item>
 </root>
